@@ -11,4 +11,7 @@ string
 boolean = true / false
 null // stand alone value
 undefined // vale that not defined 
+symbol // use for unique
+
+object
 */

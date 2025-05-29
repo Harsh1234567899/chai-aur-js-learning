@@ -3,5 +3,5 @@ view -> command palette -> search container -> node
 
 "use strict" // treat all JS code as newer version
 
-tc.39.es && mdn //website
+ecma script && mdn //website
 documentation of js create by ecma 
