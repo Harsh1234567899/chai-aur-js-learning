@@ -45,3 +45,4 @@ console.log(Array.from(mytName));
 const score1 = 100
 const score2 = 200
 console.log(Array.of(score1,score2));  //of() is combine multiple variable value in array
+
