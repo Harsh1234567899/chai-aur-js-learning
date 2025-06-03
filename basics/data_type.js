@@ -9,7 +9,7 @@ numbers -> 2 to 53
 bigint
 string
 boolean = true / false
-null // stand alone value
+null // stand alone value // is object
 undefined // vale that not defined 
 symbol // use for unique
 
