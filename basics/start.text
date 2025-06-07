@@ -5,3 +5,23 @@ view -> command palette -> search container -> node
 
 ecma script && mdn //website
 documentation of js create by ecma 
+
+*************************
+javascript execution context
+
+> global execution context // create a code into global variable of code put into "this"
+> funtion execution context
+> Eval execution context
+
+memory creation phase //  in this only memory allocation is done
+execution phase // in this phase all operations is done  by javascript
+
+
+1) global execution => this
+
+2) memory phase 
+> put all variable and set value = undefined
+> funtions = defination (funtion inside code) 
+
+3)execution phase
+> not it will put variable value in there variable
