@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM chai or Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const myDiv =document.createElement('div')
+    console.log(myDiv);
+    myDiv.className = "main"
+    myDiv.id = "myId"
+    myDiv.id = Math.round(Math.random() * 10 + 1)
+    myDiv.setAttribute("title","my title")
+    myDiv.style.backgroundColor = "red"
+    myDiv.style.padding = "10px"
+    // myDiv.innerHTML = "harsh"
+    const myCreate = document.createTextNode("hello harsh harsh")
+    myDiv.appendChild(myCreate)
+    document.body.appendChild(myDiv)
+    
+</script>
+</html>
