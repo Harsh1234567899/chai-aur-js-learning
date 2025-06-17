@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <ul class="language">
+        <li>javaScript</li>
+    </ul>
+</body>
+<script>
+    function add(name) {
+        const myLi = document.createElement('li')
+        myLi.innerHTML = `${name}`
+        // myLi.innerHTML = `<p>${name}</p>` // html pass as real , and not optimized
+        document.querySelector(".language").appendChild(myLi)
+    }
+    add("pyton")
+    add("java")
+
+    function addopti(name){
+        const li2 = document.createElement('li')
+        li2.appendChild(document.createTextNode(name))
+        // li2.appendChild(document.createTextNode(`<p>${name}</p>`)) // html tag pass as a text // and optimized
+        document.querySelector('.language').appendChild(li2)
+    }
+    addopti("rubi")
+    
+    // edit 
+
+    const editing = document.querySelector('li:nth-child(2)')
+    // editing.innerText = "harsh"
+    const newLi = document.createElement('li')
+    newLi.textContent = "harsh"
+    editing.replaceWith(newLi)
+
+    const editing2 = document.querySelector('li:first-child')
+    editing2.outerHTML = '<li>typeScript</li>'
+
+    // remove
+    const editing3 = document.querySelector('li:last-child')
+    editing3.remove()
+</script>
+</html>
