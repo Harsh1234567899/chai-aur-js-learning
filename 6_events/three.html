@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>harsh javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // set interval 
+    // let a = 1
+    // const myInterval = function(){
+    //     console.log(a);
+    //     a++
+    // }
+    // setInterval(myInterval,1000)
+    let a = 1
+    const myInterval = function(e){ // e giving argument
+        console.log(a,e);
+        a++
+    }
+    // const intervalId = setInterval(myInterval,1000,'hii') // we can give argument at last
+    let intervalId
+    
+    document.querySelector('#start').addEventListener('click',function(){
+        intervalId = setInterval(myInterval,1000,'hii')
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(intervalId)
+    })
+</script>
+</html>

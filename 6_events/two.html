@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>harsh</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log('harsh');        
+    // },2000)
+
+    const sayHii = function(){
+        console.log('harsh');        
+    }
+    const change = function(){document.querySelector('h1').innerHTML='pankhaniya'}
+    const  changeME = setTimeout(change,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeME)
+        console.log('bapu');
+        
+    })
+</script>
+</html>
