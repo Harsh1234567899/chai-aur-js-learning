@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+</head>
+<body>
+    <button>Button</button>
+</body>
+<script>
+    class React{
+        constructor(){
+            this.library = "react"
+            this.server = "https://localhost:300"
+
+            // requirment
+            document.querySelector('button')
+            .addEventListener( "click",this.handalClick.bind(this) ) // bind will pass the value of construtor to caller funtion
+        } // bind is older 
+        handalClick(){
+            console.log("click");
+            console.log(this.server);
+            console.log(this.library); 
+        }
+    }
+    // const app = new React()
+</script>
+</html>
