@@ -10,4 +10,4 @@ const user = {
     }
 }
 const tea = Object.create(user)
-console.log(tea.email);
+console.log(tea.email); // email is now mwthod but get and set not convert in method 
